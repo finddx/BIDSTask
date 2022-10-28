@@ -16,12 +16,12 @@ please give a list of all variables that their Labels do not agree with their co
 
 
 ### Question 2
-Using the [mock_excel_1.xlsx]() file
+Using the [mock_excel_1.xlsx](https://github.com/finddx/BIDSTask/blob/main/mock_excel_1.xlsx) file
 please highlight/return the rows where there are mandatory values missing and highlight/return the cells where there are values not matching the template file provided. 
 
 
 ### Question 3
-Using the [mock_excel_2.xlsx]() file please highlight/return the rows where the below logical rules are NOT TRUE:
+Using the [mock_excel_2.xlsx](https://github.com/finddx/BIDSTask/blob/main/mock_excel_2.xlsx) file please highlight/return the rows where the below logical rules are NOT TRUE:
 
   1. Column `Assay Target`	Must EQUAL 'RNA' IF 'Disease Target' INCLUDES 'COVID-19' AND 'Type of Technology' EQUALS 'Molecular'
   
