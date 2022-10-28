@@ -1,3 +1,3 @@
 # Task website
 
-Website: https://finddx.github.io/BIDStask/
+Website: https://finddx.github.io/BIDSTask/
