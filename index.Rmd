@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Question 1
 
-Using the [template_info.xlsx]() file
+Using the [template_info.xlsx](https://github.com/finddx/BIDSTask/blob/main/template_info.xlsx) file
 please give a list of all variables that their Labels do not agree with their corresponding Values.
 
 
@@ -21,4 +21,18 @@ please highlight/return the rows where there are mandatory values missing and hi
 
 
 ### Question 3
+Using the [mock_excel_2.xlsx]() file please highlight/return the rows where the below logical rules are NOT TRUE:
 
+  1. Column `Assay Target`	Must EQUAL 'RNA' IF 'Disease Target' INCLUDES 'COVID-19' AND 'Type of Technology' EQUALS 'Molecular'
+  
+  2. Column `Target Analyte(s)`	Must CONTAIN one or more 'E gene'; 'N gene'; 'S gene'; 'ORF1ab'; 'ORF1a'; 'ORF1b'; 'RdRp gene'; 'Other'; 'Unknown'; IF 'Assay Target' EQUALS 'RNA'
+  
+  3. Column `Target Analyte(s)`	Must CONTAIN one or more 'IgG'; 'IgM'; 'IgA'; 'Total Antibody'; 'Other'; 'Unknown'; IF 'Assay Target' EQUALS 'Antibody (serological)'
+  
+  4. Column `Target Analyte(s)`	Must CONTAIN one or more 'N-protein'; 'S-protein (type unknown)'; 'S-protein S1'; 'S-protein RBD'; 'S-protein S2'; 'Other'; 'Unknown'; IF 'Assay Target' EQUALS 'Antigen'
+
+
+It would be preferable to return your results and code in an R project file, which would contain the scripts and an Rmarkdown document with the questions and answers. If the above is not possible, please send a zip folder containing the scripts used.
+
+  
+  

@@ -168,35 +168,37 @@ pre code {
 <div id="question-1" class="section level3">
 <h3>Question 1</h3>
 <p>Using the <a
-href="https://github.com/finddx/FINDCov19TrackerData/blob/master/processed/data_all.csv">FINDCovTrackerData</a>
-(please look at the <a
-href="https://github.com/finddx/FINDCov19TrackerData/blob/master/processed/codebook.csv">codebook</a>
-for details on variables) calculate the number of days that each country
-reported tests, cases and deaths per <strong>a) month</strong> and per
-<strong>b) quarter</strong>.</p>
-<p><strong>Tip</strong>: use columns with <code>_orig</code> suffix and
-treat NA or 0s as days that countries did not report data. Present
-results in a table with one metric shown at a time, chosen by the user
-(i.e. number of days with tests reported in a month).</p>
+href="https://github.com/finddx/BIDSTask/blob/main/template_info.xlsx">template_info.xlsx</a>
+file please give a list of all variables that their Labels do not agree
+with their corresponding Values.</p>
 </div>
 <div id="question-2" class="section level3">
 <h3>Question 2</h3>
-<p>Using the <a
-href="https://github.com/finddx/FINDCov19TrackerData/blob/master/processed/data_all.csv">FINDCovTrackerData</a>
-(please look at the <a
-href="https://github.com/finddx/FINDCov19TrackerData/blob/master/processed/codebook.csv">codebook</a>
-for details on variables) calculate the <strong>a) monthly</strong> and
-<strong>b) quarterly</strong> average testing, case and death rate per
-capita (per 1000 people) per country.</p>
-<p><strong>Tip</strong>: use columns with <code>cap_new_</code> prefix.
-Present results in a table with one metric shown at a time, chosen by
-the user (i.e. average testing rate per 1000 per month).</p>
+<p>Using the <a href="">mock_excel_1.xlsx</a> file please
+highlight/return the rows where there are mandatory values missing and
+highlight/return the cells where there are values not matching the
+template file provided.</p>
 </div>
 <div id="question-3" class="section level3">
 <h3>Question 3</h3>
-<p>For both questions 2 and 3, there should be an option to select one
-or more countries to be shown in the tables. Allow maximum up to 6
-countries to be selected.</p>
+<p>Using the <a href="">mock_excel_2.xlsx</a> file please
+highlight/return the rows where the below logical rules are NOT
+TRUE:</p>
+<ol style="list-style-type: decimal">
+<li><p>Column <code>Assay Target</code> Must EQUAL ‘RNA’ IF ‘Disease
+Target’ INCLUDES ‘COVID-19’ AND ‘Type of Technology’ EQUALS
+‘Molecular’</p></li>
+<li><p>Column <code>Target Analyte(s)</code> Must CONTAIN one or more ‘E
+gene’; ‘N gene’; ‘S gene’; ‘ORF1ab’; ‘ORF1a’; ‘ORF1b’; ‘RdRp gene’;
+‘Other’; ‘Unknown’; IF ‘Assay Target’ EQUALS ‘RNA’</p></li>
+<li><p>Column <code>Target Analyte(s)</code> Must CONTAIN one or more
+‘IgG’; ‘IgM’; ‘IgA’; ‘Total Antibody’; ‘Other’; ‘Unknown’; IF ‘Assay
+Target’ EQUALS ‘Antibody (serological)’</p></li>
+<li><p>Column <code>Target Analyte(s)</code> Must CONTAIN one or more
+‘N-protein’; ‘S-protein (type unknown)’; ‘S-protein S1’; ‘S-protein
+RBD’; ‘S-protein S2’; ‘Other’; ‘Unknown’; IF ‘Assay Target’ EQUALS
+‘Antigen’</p></li>
+</ol>
 </div>
 
 
